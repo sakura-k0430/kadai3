@@ -1,0 +1,23 @@
+<h2>User info</h2>
+
+      <table class="table">
+        <tbody>
+          <tr></tr>
+        <tr>
+        <%= image_tag user.get_profile_image(100,100) %>
+        <th>name</th>
+        <th><%= user.name %></th>
+        <th></th>
+        </tr>
+        <tr>
+        <th>introduction</th>
+        <th><%= user.introduction %></th>
+        <th></th>
+        </tr>
+
+        <button type="button" class="btn btn-outline-secondary">
+        <%= link_to "プロフィール編集", edit_user_path(user) %>
+        <i class="fa-solid fa-user-cog"></i>
+        </button>
+          </tbody>
+       </table>
